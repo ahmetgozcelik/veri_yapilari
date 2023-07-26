@@ -7,7 +7,7 @@ def solution():
 
     for ix, temperature in enumerate(temperatures):
         while myStack and temperature > myStack[-1][0]:
-            stackTemp, stackIndex = myStack.pop()
+            stackTemp, stackIndex = myStack.pop() #stackTemp ??
             result[stackIndex] = ix - stackIndex
         myStack.append([temperature, ix])
     return result
