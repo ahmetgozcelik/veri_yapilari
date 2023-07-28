@@ -1,3 +1,6 @@
+from typing import Self
+
+
 class Solution:
     def fib(self, n: int) -> int:
 
@@ -38,9 +41,9 @@ class Solution:
     memo = {}
 
     def memoizationSolution(n):
-        if n not in memo:
-            memo[n] = fib(n)
-        return memo[n]
+        if n not in Self.memo:
+            Self.memo[n] = Self.fib(n)
+        return Self.memo[n]
     
 solution = Solution()
 print(solution.fib(15))
