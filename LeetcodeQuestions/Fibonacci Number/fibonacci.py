@@ -1,6 +1,7 @@
 class Solution:
     def fib(self, n: int) -> int:
 
+
 # My Solution
 
 #         if n == 0:
@@ -15,11 +16,31 @@ class Solution:
 # # 1-1-2-3
 
 
-# :((((
-        x , y = 0 , 1
+# # :((((
+#         x , y = 0 , 1
+#         for i in range(n):
+#             x , y = y , x+y
+#         return x
+# solution = Solution()
+# print(solution.fib(10))
+
+
+
+
+#Memorization
+#Tekrarlanan hesaplamaları önlemek için kullanılan bir tekniktir./It is a technique to be used for repeat accounts.
+        x, y = 0, 1
         for i in range(n):
-            x , y = y , x+y
+            x, y = y, x + y
         return x
     
+   
+    memo = {}
+
+    def memoizationSolution(n):
+        if n not in memo:
+            memo[n] = fib(n)
+        return memo[n]
+    
 solution = Solution()
-print(solution.fib(10))
+print(solution.fib(15))
