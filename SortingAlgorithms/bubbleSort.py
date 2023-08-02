@@ -1,3 +1,5 @@
+#ikili kıyaslama yaparak küçük ve büyüğün yerini değiştiriyor.
+
 class SortingAlgorithms:
 
     def bubbleSort(self, arr):
