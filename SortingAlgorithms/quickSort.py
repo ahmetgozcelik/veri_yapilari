@@ -1,4 +1,4 @@
-# İlk elemanı pivot olarak alır. Daha sonra o pivot noktasına göre küçükleri sola büyükleri sağa alarak devam eder. O pivot noktası yerini bulduktan sonra yeni satırdan pivot alınarak devam edilir ve hepsi yerini bulur.
+# İlk elemanı pivot olarak alır. Daha sonra o pivot noktasına göre küçükleri sola büyükleri sağa alarak devam eder. O pivot noktası yerini bulduktan sonra yeni satırdan pivot alınarak devam edilir ve hepsi yerini bulur. Bize sıralı bir şey verilirse quick yerine instertion kullanmak çok daha mantıklı.
 
 def pivot(arr, pivotIndex, endIndex):
     swapIndex = pivotIndex
